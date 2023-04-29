@@ -29,29 +29,39 @@ const Footer = () => {
       <div>
         <p className="text-3xl mb-4">General links</p>
         <ul className="">
-          <li>Home</li>
-          <li>Products</li>
-          <li>About us</li>
-          <li>Contact us</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">Home</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">Products</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">About us</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            Contact us
+          </li>
         </ul>
       </div>
       <div>
         <p className="text-3xl mb-4">Products</p>
         <ul className="">
-          <li>Engineering products</li>
-          <li>Metals & Mining ores</li>
-          <li>GRC products</li>
-          <li>Other products</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            Engineering products
+          </li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            Metals & Mining ores
+          </li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            GRC products
+          </li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            Other products
+          </li>
         </ul>
       </div>
       <div>
         <p className="text-3xl mb-4">Contact us</p>
         <div className="flex mb-3 items-center w-[25vw]">
-          <img className="w-6 mr-2" src={user} alt="" />
-          <p>Madhav rao</p>
+          <img className="w-6 mr-3" src={user} alt="" />
+          <p>Mr. Madhava Rao</p>
         </div>
         <div className="flex mb-3 items-center w-[25vw]">
-          <img className="w-6 mr-2" src={phone} alt="" />
+          <img className="w-6 mr-3" src={phone} alt="" />
           <a
             href="https://api.whatsapp.com/send?phone=919704233306"
             target="_blank"
@@ -61,13 +71,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex mb-3 items-center w-[25vw]">
-          <img className="w-6 mr-2" src={mail} alt="" />
+          <img className="w-6 mr-3" src={mail} alt="" />
           <a href="mailto:thrayeesales@gmail.com">
             <p>thrayeesales@gmail.com</p>
           </a>
         </div>
         <div className="flex mb-3 items-center w-[25vw]">
-          <img className="w-6 mr-2" src={navigation} alt="" />
+          <img className="w-6 mr-3" src={navigation} alt="" />
           <p>
             D.No.2-22-310/C/402, Plot No.39c, Addagutta Society, Opp. Jntu,
             Kukatpally, Hyderabad, Telangana - 500072, India
