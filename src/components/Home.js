@@ -9,6 +9,7 @@ import img6 from '../assets/6.jpeg';
 import faq from '../assets/faq.png';
 import ImageCard from './ImageCard';
 import Accordion from './Accordion';
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
       <div>
         <h1 className='text-4xl text-center mt-20 mb-2'>Latest Products</h1>
         <p className='text-lg text-center mb-20'>Click on card to get more information about the product.</p>
-        <div className='flex mx-[6vw] flex-wrap justify-center items-center'>
+        <div className='flex mx-[2vw] flex-wrap justify-center items-center'>
           <ImageCard icon={img1} name={names[0]} />
           <ImageCard icon={img2} name={names[1]} />
           <ImageCard icon={img3} name={names[2]} />
@@ -35,13 +36,14 @@ const Home = () => {
           <ImageCard icon={img6} name={names[5]} />
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center bg-[#fff5f5]'>
+      <div className='flex flex-col justify-center items-center bg-[#fff5f5] pb-10'>
         <h1 className='text-4xl text-center mt-10 mb-10'>Frequently Asked Questions</h1>
         <div className='flex justify-center items-center'>
           <img className='h-[20vw]' src={faq} alt="" />
           <Accordion />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
