@@ -7,6 +7,7 @@ import navigation from "../assets/navigation.png";
 import user from "../assets/user.png";
 import phone from "../assets/wapp.png";
 import mail from "../assets/mail.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,9 +30,9 @@ const Footer = () => {
       <div>
         <p className="text-3xl mb-4">General links</p>
         <ul className="">
-          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">Home</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]"><Link to="/">Home</Link></li>
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">Products</li>
-          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">About us</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]"><Link to="/about">About us</Link></li>
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
             Contact us
           </li>

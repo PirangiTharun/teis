@@ -9,7 +9,6 @@ import img6 from '../assets/6.jpeg';
 import faq from '../assets/faq.png';
 import ImageCard from './ImageCard';
 import Accordion from './Accordion';
-import Footer from './Footer';
 
 
 const Home = () => {
@@ -43,7 +42,6 @@ const Home = () => {
           <Accordion />
         </div>
       </div>
-      <Footer />
     </div>
   )
 }
