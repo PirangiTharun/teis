@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-around mx-[6vw] my-10">
+    <footer className="flex flex-wrap justify-around shadow-inner px-[6vw] pt-10 pb-4 border-gray-800">
       <div>
         <p className="text-3xl mb-4">Follow us:</p>
         <div className="flex">
@@ -30,9 +30,13 @@ const Footer = () => {
       <div>
         <p className="text-3xl mb-4">General links</p>
         <ul className="">
-          <li className="mb-3 cursor-pointer hover:text-[#ee6567]"><Link to="/">Home</Link></li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            <Link to="/">Home</Link>
+          </li>
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">Products</li>
-          <li className="mb-3 cursor-pointer hover:text-[#ee6567]"><Link to="/about">About us</Link></li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            <Link to="/about">About us</Link>
+          </li>
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
             Contact us
           </li>
@@ -61,7 +65,7 @@ const Footer = () => {
           <img className="w-6 mr-3" src={user} alt="" />
           <p>Mr. Madhava Rao</p>
         </div>
-        <div className="flex mb-3 items-center w-[25vw]">
+        <div className="flex mb-3 items-center w-[25vw] hover:text-[#ee6567]">
           <img className="w-6 mr-3" src={phone} alt="" />
           <a
             href="https://api.whatsapp.com/send?phone=919704233306"
@@ -71,7 +75,7 @@ const Footer = () => {
             <p>+91 9704233306</p>
           </a>
         </div>
-        <div className="flex mb-3 items-center w-[25vw]">
+        <div className="flex mb-3 items-center w-[25vw] hover:text-[#ee6567]">
           <img className="w-6 mr-3" src={mail} alt="" />
           <a href="mailto:thrayeesales@gmail.com">
             <p>thrayeesales@gmail.com</p>
