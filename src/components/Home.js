@@ -9,6 +9,7 @@ import img6 from '../assets/6.jpeg';
 import faq from '../assets/faq.png';
 import ImageCard from './ImageCard';
 import Accordion from './Accordion';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -27,12 +28,12 @@ const Home = () => {
         <h1 className='text-4xl text-center mt-20 mb-2'>Latest Products</h1>
         <p className='text-lg text-center mb-20'>Click on card to get more information about the product.</p>
         <div className='flex mx-[2vw] flex-wrap justify-center items-center'>
-          <ImageCard icon={img1} name={names[0]} />
-          <ImageCard icon={img2} name={names[1]} />
-          <ImageCard icon={img3} name={names[2]} />
-          <ImageCard icon={img4} name={names[3]} />
-          <ImageCard icon={img5} name={names[4]} />
-          <ImageCard icon={img6} name={names[5]} />
+          <Link to="/viewProduct/1001" state={{icon:img1, name: names[0]}}><ImageCard icon={img1} name={names[0]} /></Link>
+          <Link to="/viewProduct/1002" state={{icon:img2, name: names[1]}}><ImageCard icon={img2} name={names[1]} /></Link>
+          <Link to="/viewProduct/1003" state={{icon:img3, name: names[2]}}><ImageCard icon={img3} name={names[2]} /></Link>
+          <Link to="/viewProduct/1004" state={{icon:img4, name: names[3]}}><ImageCard icon={img4} name={names[3]} /></Link>
+          <Link to="/viewProduct/1005" state={{icon:img5, name: names[4]}}><ImageCard icon={img5} name={names[4]} /></Link>
+          <Link to="/viewProduct/1006" state={{icon:img6, name: names[5]}}><ImageCard icon={img6} name={names[5]} /></Link>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center bg-[#fff5f5] pb-10'>
