@@ -33,12 +33,13 @@ const Footer = () => {
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
             <Link to="/">Home</Link>
           </li>
-          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">Products</li>
+          <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
+            <Link to="/products">Products</Link></li>
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
             <Link to="/about">About us</Link>
           </li>
           <li className="mb-3 cursor-pointer hover:text-[#ee6567]">
-            Contact us
+            <Link to="/contact" >Contact us</Link>
           </li>
         </ul>
       </div>

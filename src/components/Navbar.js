@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const Navbar = () => {
-    const { pathname } = useLocation();
+  const { pathname } = useLocation();
+    useEffect(()=>{
+      window.scrollTo(0,0);
+    },[pathname])
     const normal = "text-2xl font-semibold cursor-pointer hover:underline hover:text-[#ff6b6d] underline-offset-4 mr-8 float-right";
     const selected = "text-2xl font-semibold cursor-pointer underline text-[#ff6b6d] underline-offset-4 mr-8 float-right"
     return (
@@ -29,8 +32,8 @@ const Navbar = () => {
           </li>
           {/* <li className={pathname.includes('/contact') ? selected : normal}>Contact us</li> */}
           <li>
-            <button className="text-2xl font-semibold px-4 py-2 border  bg-[#ff6b6d] rounded-lg text-white hover:bg-[#ee6567] float-right">
-              Call us
+            <button className="text-2xl font-semibold px-4 py-2 border  bg-[#ff6b6d] rounded-full text-white hover:bg-[#ee6567] float-right">
+              <Link to="/contact">Call us</Link>
             </button>
           </li>
         </ul>

@@ -6,9 +6,9 @@ const ViewProduct = () => {
     const state = location.state;
     return (
       <div className="flex px-[6vw] py-[40px]">
-        <div className="shadow-lg overflow-hidden flex flex-col justify-center items-center mr-[32px]">
+        <div className="shadow-lg overflow-hidden flex flex-col justify-center items-center mr-[32px] p-[3vw]">
           <img
-            className="hover:scale-125 transition-all duration-500"
+            className="hover:scale-125 transition-all duration-500 w-[25vw] h-[45vh]"
             src={state.icon}
             alt=""
           />

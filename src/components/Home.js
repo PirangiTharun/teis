@@ -20,7 +20,7 @@ const Home = () => {
         <div>
           <p className='text-5xl mb-6 leading-[3.5rem]'>A Global Supplier of Industrial Machinery and Spares.</p>
           <p className='text-lg'>Headed by highly experienced professionals, within short time the company has got good reputation in the domestic and international markets. The team is a major strength of the company.</p>
-          <button className='text-2xl mt-10 font-semibold px-4 py-2 rounded-lg text-white hover:bg-[#ee6567] bg-[#ff6b6d]'>Book Appointment</button>
+          <button className='text-2xl mt-10 font-semibold px-4 py-2 rounded-full text-white hover:bg-[#ee6567] bg-[#ff6b6d]'>Book Appointment</button>
         </div>
         <img className='h-[80vh] w-[45vw]' src={Image} alt="" />
       </div>

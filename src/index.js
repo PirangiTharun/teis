@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import Home from './components/Home';
 import Products from './components/Products';
 import ViewProduct from './components/ViewProduct';
+import ContactUs from './components/ContactUs';
 
 const appRouter = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const appRouter = createBrowserRouter([
       {
         path: '/viewProduct/:id',
         element: <ViewProduct />,
+        children: []
+      },
+      {
+        path: '/contact',
+        element: <ContactUs />,
         children: []
       }
     ]
