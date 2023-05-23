@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* <li className={pathname.includes('/contact') ? selected : normal}>Contact us</li> */}
           <li>
             <button className="text-2xl font-semibold px-4 py-2 border  bg-[#ff6b6d] rounded-full text-white hover:bg-[#ee6567] float-right">
-              <Link to="/contact">Call us</Link>
+              <Link to="/contact">Contact us</Link>
             </button>
           </li>
         </ul>
